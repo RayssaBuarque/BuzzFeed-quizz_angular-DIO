@@ -4,7 +4,7 @@ import quizz_questions from "../../../assets/data/quizz_questions.json"
 @Component({
   selector: 'app-quizz',
   templateUrl: './quizz.component.html',
-  styleUrls: ['./quizz.component.css']
+  styleUrls: ['./quizz.component.css', './quizz-responsive.component.css']
 })
 export class QuizzComponent implements OnInit {
   title:string = "Título Inicial"
@@ -19,6 +19,7 @@ export class QuizzComponent implements OnInit {
   answers:string[] = []
   answerSelected:string = ""
 
+  userResultImg:string=""
   finished:boolean = false
 
   constructor() { }
@@ -27,6 +28,8 @@ export class QuizzComponent implements OnInit {
     if(quizz_questions){
       this.finished = false;
       this.title = quizz_questions.title
+      this.finished = false;
+      this.questionIndex = 0;
       // this.title = quizz_questions[this.quizzId].title
       this.questions = quizz_questions.questions
       // this.questions = quizz_questions[this.quizzId].questions
@@ -51,6 +54,8 @@ export class QuizzComponent implements OnInit {
       this.finished = true
 
       this.answerSelected = quizz_questions.results[ finalAnswer as keyof typeof quizz_questions.results]
+      console.log(quizz_questions.resultsUrls)
+      this.userResultImg =  quizz_questions.resultsUrls[ finalAnswer as keyof typeof quizz_questions.resultsUrls]
     }
   }
 
@@ -64,6 +69,10 @@ export class QuizzComponent implements OnInit {
     })
 
     return result
+  }
+  redo(){
+    this.ngOnInit();
+    console.log('aaaaaa')
   }
 
 }

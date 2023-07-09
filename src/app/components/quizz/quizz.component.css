@@ -1,43 +1,112 @@
 .quizz__container{
-    width: 80%;
+    width: 75%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
-.quizz__logo{
+.quizz__itself{
+    width: 75%;
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+}
+
+/******TÍTULO DO QUIZ******/
+
+.quizz__title{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/******PERGUNTA******/
+
+.quizz__questions{
+    margin: 20px 0;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/******OPÇÕES DE RESPOSTA******/
+
+.quizz__options{
+    display:flex;
+    flex-direction: row;
+    /* garante que todos os itens em display aparecerão entre quebras de linha   */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.btn-option{
+    width: 49.75%;
+    padding: 16px 30px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid #ee3322;
+    background-color: transparent;
+    color:rgb(109, 91, 91);
+
+    cursor:pointer;
+    text-shadow: 0px 1px 0px #9c7f7d;
+}
+
+.btn-option:hover{
+    background-color: #ee3322;
+    color:white;
+}
+
+/*efeitinho de animação quando o botão for ativado (clicado)*/
+.btn-option:active{
+    position: relative;
+    top: 1px;
+}
+
+/******RESULTADO******/
+
+.quizz__results{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.quizz__logo > h3{
-    margin-top: 20px;    
+.quizz__results > img{
+    margin-top: 1rem;
+    width: 55%;
+    height: auto;
 }
 
-.quizz__questions{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.quizz__results > h1{
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
-.quizz__options{
-    display:flex;
-    /* garante que todos os itens em display aparecerão entre quebras de linha   */
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+.quizz__results > p{
+    font-size: 20px;
 }
 
-.btn-option{
-    width: 50%;
-    display:inline;
+.quizz__results > button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor:pointer;
+
+    color: white;
+    background-color: #ee3322;
 }
 
-/*efeitinho de animação quando o botão for ativado (clicado)*/
-.btn-option:active{
+.quizz__results > button:hover{
+    background-color: rgb(250, 67, 35);
     position: relative;
     top: 1px;
 }

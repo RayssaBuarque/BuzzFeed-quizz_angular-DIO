@@ -1,0 +1,19 @@
+@media screen and (max-width:1110px){
+    .quizz__results > img{
+        width: 65%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:800px){
+    .quizz__itself{
+        width: 95%;
+        position: static;
+        transform: translate(0, 0);
+    }
+
+    .quizz__results > img{
+        width: 95%;
+        height: auto;
+    }
+}

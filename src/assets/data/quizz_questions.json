@@ -1,22 +1,22 @@
 {
-  "title":"Você seria um super herói ou um vilão ?",
+  "title":"✨🦸 Você seria um super herói ou um vilão? 🦹‍♀️✨",
   "questions":[
     {
       "id":1,
-      "question": "Qual super poder você escolheria ?",
+      "question": "Qual super poder você escolheria?",
       "options":[
         {"id": 1, "name":"Raios-Lasers", "alias":"A"},
         {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
         {"id": 4, "name":"Curar feridas", "alias":"B"},
         {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
       ]
     },
     {
       "id":2,
-      "question": "Quem você salvaria primeiro ?",
+      "question": "Quem você salvaria primeiro?",
       "options":[
         {"id": 1, "name":"Crianças", "alias":"A"},
+        {"id": 2, "name":"Meus amigos", "alias":"B"},
         {"id": 2, "name":"Idosos", "alias":"A"},
         {"id": 3, "name":"Não saberia escolher", "alias":"B"}
       ]
@@ -51,5 +51,9 @@
   "results":{
     "A": "Você muito provavelmente seria um super vilão!",
     "B": "Você muito provavelmente seria um super Herói!"
+  },
+  "resultsUrls":{
+    "A": "https://66.media.tumblr.com/c2e744bef97b7c287f5d672e5d09839a/tumblr_py3ujjzTTa1stmf6to1_500.gif",
+    "B": "https://66.media.tumblr.com/615751523e16f7e9edcf64a72caff7cc/tumblr_pwb38zfhMH1s9a9yjo1_500.gif"
   }
 }
