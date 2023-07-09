@@ -1,0 +1,43 @@
+.quizz__container{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.quizz__logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quizz__logo > h3{
+    margin-top: 20px;    
+}
+
+.quizz__questions{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quizz__options{
+    display:flex;
+    /* garante que todos os itens em display aparecerão entre quebras de linha   */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.btn-option{
+    width: 50%;
+    display:inline;
+    cursor:pointer;
+}
+
+/*efeitinho de animação quando o botão for ativado (clicado)*/
+.btn-option:active{
+    position: relative;
+    top: 1px;
+}
