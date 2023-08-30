@@ -1,6 +1,6 @@
-# ✨🦸 Would you be a super hero or a villain? 🦹‍♀️✨ (DIO 2023)
+# BuzzFeed Clone: Fun Quiz (DIO 2023)
 
-This is a fun BuzzFeed Quiz clone project!
+Would you be a super hero or a villain?
 
 ![Print da tela do Quiz desenvolvido](/src/assets/thumbnail.png)
 
